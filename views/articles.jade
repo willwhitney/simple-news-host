@@ -1,0 +1,13 @@
+!!! 5
+mixin article(item)
+  h1 #{item.title}
+  p !{item.description}
+
+html
+  head
+    title Simple News
+    link(rel='stylesheet', href='/styles/style.css')
+  body
+    .wrapper
+      for item in articles
+        +article(item)

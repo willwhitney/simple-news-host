@@ -1,0 +1,12 @@
+{
+  "name": "simple-news-host",
+  "description": "bringing you the most important news with the least crap",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.0",
+    "feedparser": "0.9.14",
+    "jade": "0.27.0",
+    "less-middleware": "0.1.4"
+  }
+}
