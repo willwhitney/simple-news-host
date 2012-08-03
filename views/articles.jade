@@ -1,6 +1,7 @@
 !!! 5
 mixin article(item)
-  h1 #{item.title}
+  a( href="#{item.link}" )
+    h1 #{item.title}
   p !{item.description}
 
 html
