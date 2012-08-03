@@ -21,6 +21,9 @@ a.more {
   font-weight: 300;
   color: #a6a6a6;
 }
+h2 {
+  font-size: 18px;
+}
 .page_title {
   display: inline-block;
   margin-right: 15px;
