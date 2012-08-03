@@ -1,0 +1,20 @@
+!!! 5
+mixin article(item)
+  a( href="#{item.link}" )
+    h2.title #{item.title}
+  h3.timestamp #{item.pretty_timestamp}
+  for para in item.desk_paragraphs
+    p !{para} 
+      if para == item.desk_paragraphs[item.desk_paragraphs.length - 1]
+        a( href="#{item.link}" ) MORE >>
+
+html
+  head
+    title Simple News
+    link(rel='stylesheet', href='/styles/desktop.css')
+  body
+    h1 Simple News
+    h2 News and Nothing Else
+    .wrapper
+      for item in articles
+        +article(item)
