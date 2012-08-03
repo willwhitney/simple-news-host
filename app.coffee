@@ -71,4 +71,5 @@ app.get '/', (req, res) ->
     console.log err if err?
     res.send html
 
-app.listen 1999
+port = process.env.PORT || 1999
+app.listen port
