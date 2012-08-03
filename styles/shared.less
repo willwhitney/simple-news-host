@@ -1,16 +1,28 @@
+@links: #a00203;
 body {
   font-family: Helvetica, Arial
 }
 
 a {
   text-decoration: none;
-  text-decoration-line: none
+  text-decoration-line: none;
+  color: darken(@links, 7%);
 }
 
 a:visited, a:active {
   color: darken(purple, 10%);
 }
 
+a:hover {
+  color: lighten(@links, 10%);
+}
+
 a.more {
   white-space: nowrap;
+}
+
+.light {
+  font-family: Helvetica Neue Light, Helvetica, Arial;
+  font-weight: 300;
+  color: lighten(gray, 15%);
 }

@@ -3,7 +3,7 @@ mixin article(item)
   .article
     a( href="#{item.link}" )
       h2.title #{item.title}
-    h3.timestamp #{item.pretty_timestamp}
+    h3.timestamp.light #{item.pretty_timestamp}
     for para in item.desk_paragraphs
       p !{para} 
         if para == item.desk_paragraphs[item.desk_paragraphs.length - 1]
@@ -14,8 +14,8 @@ html
     title Simple News
     link(rel='stylesheet', href='/styles/desktop.css')
   body
-    h1 Simple News
-    h2 News and Nothing Else
+    h1.page_title Simple News
+    h2.page_subtitle.light News and Nothing Else
     .wrapper
       for item in articles
         +article(item)

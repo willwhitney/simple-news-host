@@ -4,13 +4,31 @@ body {
 a {
   text-decoration: none;
   text-decoration-line: none;
+  color: #7d0202;
 }
 a:visited,
 a:active {
   color: #4d004d;
 }
+a:hover {
+  color: #d20304;
+}
 a.more {
   white-space: nowrap;
+}
+.light {
+  font-family: Helvetica Neue Light, Helvetica, Arial;
+  font-weight: 300;
+  color: #a6a6a6;
+}
+.page_title {
+  display: inline-block;
+  margin-right: 15px;
+}
+.page_subtitle {
+  display: inline-block;
+  color: #a6a6a6;
+  font-size: 22px;
 }
 .wrapper {
   width: 700px;
@@ -25,9 +43,6 @@ h2.title {
 }
 .timestamp {
   font-size: 12px;
-  font-family: Helvetica Neue Light, Helvetica, Arial;
-  font-weight: 300;
-  color: #a6a6a6;
 }
 a.more {
   display: inline-block;

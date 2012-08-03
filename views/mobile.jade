@@ -3,7 +3,7 @@ mixin article(item)
   .article
     a( href="#{item.link}" )
       h1 #{item.title}
-    h2.timestamp #{item.pretty_timestamp}
+    h2.timestamp.light #{item.pretty_timestamp}
     for para in item.mob_paragraphs
       p !{para} 
         if para == item.mob_paragraphs[item.mob_paragraphs.length - 1]

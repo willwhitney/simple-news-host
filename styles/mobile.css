@@ -4,13 +4,22 @@ body {
 a {
   text-decoration: none;
   text-decoration-line: none;
+  color: #7d0202;
 }
 a:visited,
 a:active {
   color: #4d004d;
 }
+a:hover {
+  color: #d20304;
+}
 a.more {
   white-space: nowrap;
+}
+.light {
+  font-family: Helvetica Neue Light, Helvetica, Arial;
+  font-weight: 300;
+  color: #a6a6a6;
 }
 .wrapper {
   margin-left: 30px;
@@ -25,9 +34,6 @@ h1 {
 }
 .timestamp {
   font-size: 12px;
-  font-family: Helvetica Neue Light, Helvetica, Arial;
-  font-weight: 300;
-  color: #a6a6a6;
 }
 a.more {
   display: inline-block;
