@@ -2,6 +2,7 @@
 mixin article(item)
   a( href="#{item.link}" )
     h1 #{item.title}
+  h2.timestamp #{item.pretty_timestamp}
   p !{item.description}
 
 html

@@ -5,8 +5,19 @@ body {
   margin-left: 30px;
   margin-right: 30px;
 }
+h1 {
+  font-size: 25px;
+  margin-bottom: -10px;
+}
+.timestamp {
+  font-size: 12px;
+  font-family: Helvetica Neue Light, Helvetica, Arial;
+  font-weight: 300;
+  color: #a6a6a6;
+}
 a {
   text-decoration: none;
+  text-decoration-line: none;
 }
 a:visited,
 a:active {
