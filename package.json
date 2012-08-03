@@ -3,6 +3,11 @@
   "description": "bringing you the most important news with the least crap",
   "version": "0.0.1",
   "private": true,
+  
+  "engines": {
+    "node": "0.8.x"
+  }
+  
   "dependencies": {
     "coffee-script": "1.3.3",
     "express": "3.0",
