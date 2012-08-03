@@ -15,7 +15,7 @@ app.configure ->
 
 articles = []
 
-regex = new RegExp '<p>(.*)(?=<div class="related")'
+regex = new RegExp '<p>(.*)(?=<div )'
 parser.on 'article', (article) ->
   # console.log article.description
   article.unix_timestamp = +new Date(article.pubdate)
@@ -24,7 +24,7 @@ parser.on 'article', (article) ->
   paras = article.description.match(regex)
   article.description = paras[0] if paras? and paras[0]?
   
-  article.paragraphs = article.description.substring(3, article.description.length - 5).split('</p><p>')
+  article.paragraphs = article.description.substring(3, article.description.lastIndexOf('</p>')).split('</p><p>')
   article.mob_paragraphs = article.paragraphs.slice(0,3)
   article.desk_paragraphs = article.paragraphs.slice(0,5)
   # console.log article.paragraphs
